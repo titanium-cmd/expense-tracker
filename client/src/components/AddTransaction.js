@@ -16,8 +16,7 @@ const AddTransaction = () => {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        const id = Math.floor(Math.random() * 100000000);
-        addTransaction({id, text, amount: Number(amount) });
+        addTransaction({text, amount: Number(amount) });
     }
 
     return (
